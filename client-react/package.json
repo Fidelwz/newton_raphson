@@ -1,5 +1,6 @@
 {
   "name": "client-react",
+  "proxy": "https://newton-raphson-be716b48c201.herokuapp.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
