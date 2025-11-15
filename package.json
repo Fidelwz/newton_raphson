@@ -1,5 +1,6 @@
 {
   "name": "newton_raphson_root",
+  "proxy": "https://newton-raphson-be716b48c201.herokuapp.com/",
   "private": true,
   "scripts": {
     "heroku-prebuild": "cd client-react && npm install --include=dev",
