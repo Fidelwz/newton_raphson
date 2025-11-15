@@ -3,12 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+interface User {
+  id: number;
+  first_name: string;
+}
+
 function App() {
-  const [users, setUsers] = useState([])
+  const [users, setUsers] = useState<User[]>([])
+
   useEffect(() => {
     fetch('http://localhost:5000/api/users')
       .then(response => response.json())
-      .then(data => setUsers(data.users));
+      .then(data => setUsers(data.users)); 
   }, []);
 
   return (
