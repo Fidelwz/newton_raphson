@@ -56,7 +56,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/calculate', {
+      const response = await fetch('https://newton-raphson-be716b48c201.herokuapp.com/api/calculate', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json', // <--- ¡ESTO ES VITAL!
